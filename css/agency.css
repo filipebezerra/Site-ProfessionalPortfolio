@@ -175,7 +175,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,cursive;
+    font-family: "Roboto","Helvetica Neue",Helvetica,Arial,cursive;
     color: #f1c40f;
 }
 
@@ -265,7 +265,15 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/header-bg.jpg);
+
+    /* Source: http://css-tricks.com/tinted-images-multiple-backgrounds/ */
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url(../img/header-bg.jpg);
+
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -277,12 +285,12 @@ header {
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
-    color: #e74c3c;
+    color: #ecf0f1;
 }
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 22px;
     line-height: 22px;
 }
@@ -304,7 +312,7 @@ header .intro-text .intro-heading {
 
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
-        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 40px;
         line-height: 40px;
     }
